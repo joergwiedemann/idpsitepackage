@@ -1,0 +1,41 @@
+##############
+#### PAGE ####
+##############
+page = PAGE
+page {
+
+    meta {
+        viewport = {$page.meta.viewport}
+        robots = {$page.meta.robots}
+        apple-mobile-web-app-capable = {$page.meta.apple-mobile-web-app-capable}
+
+        X-UA-Compatible = {$page.meta.compatible}
+        X-UA-Compatible {
+            attribute = http-equiv
+        }
+    }
+
+    includeCSSLibs {
+
+    }
+
+    includeCSS {
+        idpsitepackage_layout = EXT:idpsitepackage/Resources/Public/Css/layout.css
+    }
+
+    includeJSLibs {
+
+    }
+
+    includeJS {
+
+    }
+
+    includeJSFooterlibs {
+
+    }
+
+    includeJSFooter {
+        ###idpsitepackage_scripts = EXT:idpsitepackage/Resources/Public/JavaScript/main.js
+    }
+}
